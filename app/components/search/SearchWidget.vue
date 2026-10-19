@@ -102,6 +102,7 @@ function activate() {
               :active="index === parseInt(i.toString())"
               :result="result"
               :tabindex="focused ? 0 : -1"
+              @mousedown.left.prevent
             />
           </template>
           <span v-else block text-center text-sm text-secondary>
